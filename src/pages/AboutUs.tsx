@@ -1,4 +1,4 @@
-import { Image, Container, Card, Row, Col } from "react-bootstrap";
+import { Image, Container, Row, Col } from "react-bootstrap";
 import Layout from "../components/Layout";
 
 function AboutUsPage() {

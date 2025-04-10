@@ -10,22 +10,16 @@ export interface ModalProps {
   
 export default function SignUpModal({ showModal, closeModal }: ModalProps) {
   const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
   const [error, setError] = useState('');
 
   const submit = () => {
-    if (!firstName || !lastName || !email || !password || !confirmPassword) {
+    if (!firstName || !email || !password) {
       setError('Please fill in all fields');
       return;
     }
 
-    if (password !== confirmPassword) {
-      setError('Passwords do not match');
-      return;
-    }
 
     setError('');
     alert('Form submitted!');
@@ -37,12 +31,10 @@ export default function SignUpModal({ showModal, closeModal }: ModalProps) {
       <Modal.Body className="p-0">
         <CloseButton onClick={closeModal} className="position-absolute top-0 end-0 m-3" />
         <div className="d-flex h-100">
-          {/* Left Column: Wallpaper */}
           <div className="col-6 d-none d-lg-block">
             <img src={wallpaper} alt="Wallpaper" className="w-100 h-100 object-fit-cover" />
           </div>
 
-          {/* Right Column: Form */}
           <div className="col-12 col-lg-6 p-4">
             <h3 className="mb-4 text-uppercase">Register</h3>
             {error && <Alert variant="danger">{error}</Alert>}

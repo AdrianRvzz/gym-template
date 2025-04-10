@@ -1,11 +1,10 @@
-import React, { useState, useContext } from "react";
+import {useState}  from "react";
 
 import {
   Nav,
   Navbar,
   NavDropdown,
   Dropdown,
-  Button,
   Container,
 } from "react-bootstrap";
 import GymLogo from "../assets/gymlogo.jpg";

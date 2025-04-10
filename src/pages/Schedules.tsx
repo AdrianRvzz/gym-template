@@ -1,4 +1,4 @@
-import { Container, Accordion, Table, OverlayTrigger, Tooltip } from "react-bootstrap";
+import { Container, Table, OverlayTrigger, Tooltip } from "react-bootstrap";
 import Layout from "../components/Layout";
 import { GymSchedule, ironfortSchedule, titaniumArenaSchedule, thunderdomeSchedule, times, days } from "../utils/schedules";
 
