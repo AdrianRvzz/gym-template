@@ -16,7 +16,7 @@
     A clean and modern gym UI template built with React with Typescript and Bootstrap. Designed for speed, flexibility, and easy customization.
     <br />
     <br />
-    <a href="https://github.com/AdrianRvzz/gym-template">View Demo</a>
+    <a href="https://gym-app-ui.netlify.app/">View Demo</a>
     &middot;
     <a href="https://github.com/AdrianRvzz/gym-template/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     &middot;
